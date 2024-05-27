@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import LeaderBoard from "./Components/LeaderBoard"
 
 function App() {
+
+  const divStyle = {
+    backgroundColor:"black",
+    height:"100vh"
+  }
+  const headingStyle = {
+    textAlign:"center",
+    color:"white",
+    marginTop:"0",
+    paddingTop:"10px",
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div style={divStyle}>
+    <h1 style={headingStyle}>Streamer's LeaderBoard</h1>
+     <LeaderBoard />
+   </div>
   );
 }
-
 export default App;
+
